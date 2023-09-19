@@ -60,15 +60,5 @@ Documentation is automatically deployed to GitHub pages with GitHub actions.
 Currently, the package is only distributed through GitHub.
 In the future, we plan to submit the package to CRAN or Bioconductor.
 
-To increment the package version, update it in [`DESCRIPTION`](https://github.com/vitessce/vitessceAnalysisR/blob/master/DESCRIPTION#L4).
+To increment the package version, update it in [`DESCRIPTION`](https://github.com/vitessce/vitessceAnalysisR/blob/main/DESCRIPTION#L4).
 
-## Resources
-
-- [r leaflet](https://github.com/rstudio/leaflet)
-- [R packages](https://r-pkgs.org/)
-- [roxygen2 syntax](https://cran.r-project.org/web/packages/roxygen2/vignettes/rd-formatting.html)
-- [R6](https://r6.r-lib.org/index.html)
-- [R6 roxygen2 syntax](https://www.tidyverse.org/blog/2019/11/roxygen2-7-0-0/#r6-documentation)
-- [plumber: programmatic usage](https://www.rplumber.io/articles/programmatic-usage.html)
-- [pkgdown](https://pkgdown.r-lib.org/)
-- [S4](http://adv-r.had.co.nz/S4.html)
