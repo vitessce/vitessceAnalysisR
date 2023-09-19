@@ -1,0 +1,13 @@
+.Rproj.user
+.DS_Store
+.Rhistory
+*.Rcheck/
+*.tar.gz
+node_modules/
+docs/
+tests/testthat/seurat/
+data/
+check/
+vignettes/data/
+*.Rproj
+.RData

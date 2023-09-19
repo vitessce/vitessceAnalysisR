@@ -1,0 +1,84 @@
+url: https://vitessce.github.io/vitessceAnalysisR/
+
+template:
+  bootstrap: 5
+  bslib:
+    base_font: {google: "Inter"}
+
+authors:
+  Gehlenborg Lab:
+    href: http://gehlenborglab.org/
+  Mark Keller:
+    href: https://github.com/keller-mark
+
+navbar:
+  structure:
+    left:  [home, reference, examples, articles]
+    right: [core_docs, github]
+  components:
+    examples:
+      text: Examples
+      menu:
+       - text: "Examples with Remote Data"
+       - text: "Usage with OME-TIFF: Remote Example"
+         href: articles/web_only/ome_tiff_remote.html
+       - text: "Usage with JSON: Remote Example"
+         href: articles/web_only/json_remote.html
+       - text: -------
+       - text: "Examples with Local Data"
+       - text: "Overview: Using the widget with local data"
+         href: articles/local_data_overview.html
+       - text: "Usage with SeuratData"
+         href: articles/seuratdata.html
+       - text: "Usage with Seurat: Basic Example"
+         href: articles/seurat_basic.html
+       - text: "Usage with Seurat: Reference Mapping"
+         href: articles/seurat_azimuth.html
+       - text: "Usage with SingleCellExperiment"
+         href: articles/single_cell_experiment.html
+       - text: "Usage with SpatialExperiment"
+         href: articles/spatial_experiment.html
+       - text: "Usage with OME-TIFF: Local Example"
+         href: articles/ome_tiff_local.html
+       - text: "Usage with JSON: Local Example"
+         href: articles/json_local.html
+       - text: -------
+       - text: "Other Examples"
+       - text: "Usage with Shiny"
+         href: articles/shiny.html
+       - text: "Usage with pkgdown"
+         href: articles/pkgdown.html
+       - text: "Export data to static files"
+         href: articles/export_files.html
+    core_docs:
+      text: "Core Docs"
+      href: http://vitessce.io/docs/
+
+footer:
+  structure:
+    left: [authors]
+    right: built_with
+  components:
+    authors: Developed by the Gehlenborg Lab
+
+reference:
+- title: "Data preparation functions"
+  desc: "Helpers for converting data to formats compatible with Vitessce."
+- contents:
+  - seurat_to_anndata_zarr
+  - sce_to_anndata_zarr
+  - spe_to_anndata_zarr
+  - spe_to_ome_zarr
+  - giotto_to_anndata_zarr
+
+articles:
+  - title: Articles
+    navbar: Developer guides
+    contents:
+      - dev_wrapper_class
+      - dev_wrapper_subclass
+  - title: Articles
+    navbar: Troubleshooting
+    contents:
+      - debugging
+      - session_info
