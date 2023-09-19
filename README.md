@@ -1,4 +1,3 @@
-<img src="./img/hexsticker.png" width="230" align="right"/> 
 
 # vitessceAnalysisR
 
