@@ -121,41 +121,41 @@ SS_seqfish <- runtSNE(SS_seqfish, dimensions_to_use = 1:15)
 Set up the Vitessce widget:
 
 ```r
-library(vitessceR)
+# library(vitessceR)
 
-w <- GiottoWrapper$new(
-  SS_seqfish,
-  cell_set_metas = c("cell_types"),
-  cell_set_meta_names = c("Cell Types"),
-  cell_embeddings = c("pca", "tsne"),
-  cell_embedding_names = c("PCA", "t-SNE"),
-  out_dir = file.path("data", "giotto")
-)
+# w <- GiottoWrapper$new(
+#   SS_seqfish,
+#   cell_set_metas = c("cell_types"),
+#   cell_set_meta_names = c("Cell Types"),
+#   cell_embeddings = c("pca", "tsne"),
+#   cell_embedding_names = c("PCA", "t-SNE"),
+#   out_dir = file.path("data", "giotto")
+# )
 
-vc <- VitessceConfig$new("My config")
-dataset <- vc$add_dataset("My dataset")$add_object(w)
-spatial <- vc$add_view(dataset, Component$SPATIAL)
-scatterplot_tsne <- vc$add_view(dataset, Component$SCATTERPLOT, mapping = "t-SNE")
-cell_sets <- vc$add_view(dataset, Component$CELL_SETS)
-status <- vc$add_view(dataset, Component$STATUS)
-desc <- vc$add_view(dataset, Component$DESCRIPTION)
-desc <- desc$set_props(description = "Visualization of a Giotto object.")
+# vc <- VitessceConfig$new("My config")
+# dataset <- vc$add_dataset("My dataset")$add_object(w)
+# spatial <- vc$add_view(dataset, Component$SPATIAL)
+# scatterplot_tsne <- vc$add_view(dataset, Component$SCATTERPLOT, mapping = "t-SNE")
+# cell_sets <- vc$add_view(dataset, Component$CELL_SETS)
+# status <- vc$add_view(dataset, Component$STATUS)
+# desc <- vc$add_view(dataset, Component$DESCRIPTION)
+# desc <- desc$set_props(description = "Visualization of a Giotto object.")
 
-vc$layout(
-  hconcat(
-    vconcat(
-      spatial,
-      scatterplot_tsne
-    ),
-    vconcat(
-      cell_sets,
-      hconcat(desc, status)
-    )
-  )
-)
+# vc$layout(
+#   hconcat(
+#     vconcat(
+#       spatial,
+#       scatterplot_tsne
+#     ),
+#     vconcat(
+#       cell_sets,
+#       hconcat(desc, status)
+#     )
+#   )
+# )
 
-# Render the Vitessce widget
-vc$widget(theme = "light")
+# # Render the Vitessce widget
+# vc$widget(theme = "light")
 ```
 
 
