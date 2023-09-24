@@ -1,6 +1,6 @@
 Package: vitessceAnalysisR
 Type: Package
-Title: Data preparation helper functions for usage with the vitessceR library.
+Title: Data preparation helper functions for usage with the vitessceR library
 Version: 0.99.0
 Authors@R: c(
     person(
@@ -29,10 +29,8 @@ VignetteBuilder: knitr
 Imports:
     Matrix,
     DelayedArray,
-    jsonlite,
     reticulate,
     varhandle,
-    tools,
     stats,
     methods,
     S4Vectors,
